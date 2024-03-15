@@ -1,0 +1,31 @@
+{
+    "type_replacements": {
+        "shortint": "целое",
+        "smallint": "целое",
+        "integer": "целое",
+        "longint": "целое",
+        "int64": "целое",
+        "byte": "целое",
+        "word": "целое",
+        "longword": "целое",
+        "uint": "целое",
+        "BigInteger": "целое",
+
+        "real": "вещ.",
+        "double": "вещ.",
+        "single": "вещ.",
+        "decimal": "вещ.",
+
+        "boolean": "логический",
+
+        "char": "символ",
+        "string": "строка"
+    },
+    "alloc_type_replacements": {
+        "copy": "Ввод",
+        "r_pointer": "Ввод",
+        "rw_pointer": "Ввод-вывод",
+        "internal": "Промеж.",
+        "custom": ""
+    }
+}

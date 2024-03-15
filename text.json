@@ -1,0 +1,212 @@
+{
+    "files": [
+        {
+            "file": "TwoDim.pas",
+            "subroutines": [
+                {
+                    "subroutine_type": "function",
+                    "name": "CheckRowIsPositive",
+                    "return_type": " boolean",
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "r_pointer",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "copy",
+                            "name": "row",
+                            "type": "integer",
+                            "meaning": ""
+                        }
+                    ]
+                },
+                {
+                    "subroutine_type": "function",
+                    "name": "SumCol",
+                    "return_type": " real",
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "r_pointer",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "copy",
+                            "name": "col",
+                            "type": "integer",
+                            "meaning": ""
+                        }
+                    ]
+                },
+                {
+                    "subroutine_type": "function",
+                    "name": "FindLastPositiveRow",
+                    "return_type": " integer",
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "r_pointer",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        }
+                    ]
+                },
+                {
+                    "subroutine_type": "procedure",
+                    "name": "Modify",
+                    "return_type": null,
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "rw_pointer",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "copy",
+                            "name": "row",
+                            "type": "integer",
+                            "meaning": ""
+                        }
+                    ]
+                },
+                {
+                    "subroutine_type": "function",
+                    "name": "SumPositiveColSums",
+                    "return_type": " real",
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "r_pointer",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "internal",
+                            "name": "_sum",
+                            "type": "real",
+                            "meaning": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "OneDim.pas",
+            "subroutines": [
+                {
+                    "subroutine_type": "function",
+                    "name": "SumPositive",
+                    "return_type": " real",
+                    "additional_info": {},
+                    "variables": [
+                        {
+                            "alloc_type": "r_pointer",
+                            "name": "a",
+                            "type": "arr_d1",
+                            "meaning": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "Types.pas",
+            "subroutines": []
+        },
+        {
+            "file": "Lab3.pas",
+            "subroutines": [
+                {
+                    "subroutine_type": "main",
+                    "name": "main",
+                    "args": [
+                        {
+                            "alloc_type": "custom",
+                            "name": "a",
+                            "type": "arr_d2",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "custom",
+                            "name": "index",
+                            "type": "integer",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "custom",
+                            "name": "b",
+                            "type": "arr_d1",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "custom",
+                            "name": "c",
+                            "type": "arr_d1",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "custom",
+                            "name": "s1",
+                            "type": "real",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "custom",
+                            "name": "s2",
+                            "type": "real",
+                            "meaning": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "IO.pas",
+            "subroutines": [
+                {
+                    "subroutine_type": "procedure",
+                    "name": "Get",
+                    "return_type": null,
+                    "additional_info": {
+                        "__method__": "\u043b\u043e\u043b\u043f\u0432\u043e\u0434\u043b\u043f\u044b\u0432\u043e\u0434\u043b\u044b\u0432\u0440\u043e\u0430\u043b\u0443\u0446\u0440\u0443\u0446\u0440\u0430\u0443\u043e\u0443\u0446\u0449\u0434\u0448\u043f\u0440\u0443\u0446\u0448\u043b\u0440\u0443\u0446"
+                    },
+                    "variables": [
+                        {
+                            "alloc_type": "rw_pointer",
+                            "name": "x",
+                            "type": "arr_d1",
+                            "meaning": "\u0441\u043c\u044b\u0441\u043b"
+                        },
+                        {
+                            "alloc_type": "rw_pointer",
+                            "name": "f",
+                            "type": "TextFile",
+                            "meaning": "\u0435\u0449\u0451 \u0441\u043c\u044b\u0441\u043b"
+                        },
+                        {
+                            "alloc_type": "internal",
+                            "name": "i",
+                            "type": "integer",
+                            "meaning": ""
+                        },
+                        {
+                            "alloc_type": "internal",
+                            "name": "j",
+                            "type": "integer",
+                            "meaning": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

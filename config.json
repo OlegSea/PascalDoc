@@ -26,6 +26,7 @@
         "r_pointer": "Ввод",
         "rw_pointer": "Ввод-вывод",
         "internal": "Промеж.",
-        "custom": ""
+        "custom": "",
+        "result": "Вывод"
     }
 }

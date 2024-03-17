@@ -1,11 +1,12 @@
 from parsers.PascalABC import *
-from json import load
+from json import load, dump
 from docx import Document
 
-# FIXME: Не считывает опции к var в main функции
-# TODO: Обработка переменной Result
+# TODO: ! Переписать на классы, причесать код, исправить костыли
+# TODO: Массивы
 # TODO: Обработка нескольких переменных с одним смыслом
 # TODO: Попробовать без кавычек
+# TODO: Формат и ограничение
 # TODO: Распределить функции по файлам
 # TODO: Попробовать уменьшить костыльность кода
 # TODO: Улучшить универсальность регулярных выражений
@@ -32,6 +33,10 @@ def replace_alloc_type(alloc_type):
 
 
 data = parse_folder("./example/Lab3/")
+
+with open("text.json", "w") as f:
+    dump(data, f)
+
 
 doc = Document()
 doc.add_heading("Отчет по лабораторной работе №3", 0)
